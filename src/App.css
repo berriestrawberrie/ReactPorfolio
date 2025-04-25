@@ -1,13 +1,16 @@
 #root{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  position: relative;
+  margin-top: 50px;
+  
 }
+
 body{
-  padding: 10px;
   position: relative;
   background-image: url('assets/nightsky1.png');
   background-size: cover;
 
 }
-

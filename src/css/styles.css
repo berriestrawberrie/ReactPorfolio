@@ -1,0 +1,163 @@
+* {
+  font-family: "Winky Rough", sans-serif;
+  letter-spacing: 1.2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  max-width: 320px;
+  height: 200px;
+  overflow-y: auto;
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Gaegu", sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5019607843);
+  position: absolute;
+  top: -50px;
+}
+
+@media screen and (min-width: 600px) {
+  .whale {
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (max-width: 599px) {
+  .whale {
+    display: none;
+  }
+}
+.html {
+  background-color: yellow;
+}
+
+.css {
+  background-color: aqua;
+}
+
+.javascript {
+  background-color: orange;
+}
+
+.animation {
+  background-color: rgb(171, 81, 255);
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  max-width: 320px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+}
+
+.preview {
+  position: relative;
+}
+
+.screenshot {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tech span {
+  padding: 5px 10px;
+  margin: 5px;
+  margin-top: 0;
+  border-radius: 8px;
+}
+
+.button {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #13263A;
+  border-radius: 20px;
+  padding: 0.8em 2em;
+  background: #13263A;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: #13263A;
+  -webkit-transform: translate(-0.25rem, -0.25rem);
+          transform: translate(-0.25rem, -0.25rem);
+  background: #3A98A7;
+  -webkit-box-shadow: 0.25rem 0.25rem #13263A;
+          box-shadow: 0.25rem 0.25rem #13263A;
+}
+
+.button:active {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5019607843);
+          box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5019607843);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #13263A;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #13263A;
+}
