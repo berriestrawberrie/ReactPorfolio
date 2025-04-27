@@ -19,26 +19,38 @@ p {
 h2 {
   text-align: center;
   font-family: "Gaegu", sans-serif;
-  color: #fff;
-  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5019607843);
-  position: absolute;
-  top: -50px;
+  color: #f26767;
+  font-size: 40px;
+  margin-top: -60px;
+  margin-bottom: 0;
 }
 
-@media screen and (min-width: 600px) {
-  .whale {
-    position: absolute;
-    bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+h1 {
+  text-align: center;
+  font-family: "Gaegu", sans-serif;
+  color: #f26767;
+  font-size: 70px;
 }
-@media screen and (max-width: 599px) {
-  .whale {
-    display: none;
-  }
+
+.home-btn {
+  padding: 10px;
+  font-size: 2em;
 }
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .html {
   background-color: yellow;
 }
@@ -73,7 +85,6 @@ h2 {
   background-color: rgba(255, 255, 255, 0.5019607843);
   max-width: 320px;
   width: 100%;
-  height: 450px;
   z-index: 2;
 }
 
@@ -84,6 +95,7 @@ h2 {
 .screenshot {
   width: 300px;
   border-radius: 20px;
+  border: 5px solid #f26767;
 }
 
 .tech {
@@ -115,21 +127,26 @@ h2 {
           justify-content: space-evenly;
   color: #fff;
   cursor: pointer;
-  border: 1px solid #13263A;
+  border: 1px solid #f26767;
   border-radius: 20px;
   padding: 0.8em 2em;
-  background: #13263A;
+  background: #f26767;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
+.button-nav {
+  position: relative;
+  margin-left: 20px;
+}
+
 .button:hover {
-  color: #13263A;
+  color: #fff;
   -webkit-transform: translate(-0.25rem, -0.25rem);
           transform: translate(-0.25rem, -0.25rem);
-  background: #3A98A7;
-  -webkit-box-shadow: 0.25rem 0.25rem #13263A;
-          box-shadow: 0.25rem 0.25rem #13263A;
+  background: #83c5ac;
+  -webkit-box-shadow: 0.25rem 0.25rem #f26767;
+          box-shadow: 0.25rem 0.25rem #f26767;
 }
 
 .button:active {
@@ -153,11 +170,11 @@ h2 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #13263A;
+  background: #f26767;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #13263A;
+  background: #f26767;
 }
