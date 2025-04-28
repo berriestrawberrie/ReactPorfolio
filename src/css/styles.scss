@@ -1,23 +1,23 @@
  @use 'fonts';
 
- *{
-    font-family: fonts.$content;
-    letter-spacing: 1.2px;
-    box-sizing: border-box;
- }
+ //GENERAL CSS
+   *{
+      font-family: fonts.$content;
+      letter-spacing: 1.2px;
+      box-sizing: border-box;
+   }
 
- a{
-    text-decoration: none;
- }
-
-
+   a{
+      text-decoration: none;
+   }
 
     p{  
-
+         text-align: center;
         max-width: 320px;
         height: 200px;
         overflow-y: auto;
-        margin-top: 30px;
+        margin: 30px auto;
+
        }
        h2{
         text-align: center;
@@ -35,13 +35,6 @@
          font-size: 70px;
  
         }
-       
-.home-btn{
-    padding: 10px;
-    font-size: 2em;
-}
-    
-    
 
 
 
@@ -49,3 +42,4 @@
 
  @import 'card';
  @import 'scrollbar';
+ @import 'popup';

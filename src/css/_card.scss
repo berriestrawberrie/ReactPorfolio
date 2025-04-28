@@ -2,7 +2,7 @@
 .about{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .html{
@@ -88,4 +88,12 @@
         box-shadow: none;
       }
 
+      .btn-center{
+        margin: 0 auto;
+      }
+      .berry{
+        font-size: 20px;
+        padding: 2px;
+
+      }
   

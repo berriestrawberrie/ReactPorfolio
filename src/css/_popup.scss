@@ -1,0 +1,23 @@
+.popup-window{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.pop-info{
+    height: auto;
+    max-width: 50%;
+    margin-bottom: 50px;;
+}
+
+.pop-image{
+    border-radius: 10px;
+    width: 90%;
+}

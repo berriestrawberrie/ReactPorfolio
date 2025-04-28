@@ -1,8 +1,18 @@
 import git from '../assets/github-logo-24.png'
+import {useState} from 'react';
+import Popup from '../components/popup.jsx';
 
 function Project(props){
+
+    const [isOpen, setisOpen] = useState(false);
+
+    const closePopup = ()=> {
+        setisOpen(false);
+    }
+
     return(
         <>
+        {isOpen && <Popup title={props.title} info={props.content} onClick={closePopup} image={props.image} />}
         <div className="card">
             <h2>{props.title}</h2>
             <div className="preview">
@@ -16,6 +26,9 @@ function Project(props){
                 {props.isAnimate? <span className="animation">Animation</span> : ""}
             </div>
             <p>{props.content}</p>
+            <button className="button berry" onClick={()=>setisOpen(true)}>🔍</button>
+            
+       
         </div>
         </>
     )

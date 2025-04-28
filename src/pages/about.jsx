@@ -20,10 +20,11 @@ function About(){
 
     return (
     <>
-    <div>
-    <h1>About</h1>
-    <p>This is the about page. Click the botton to preview projects</p>
-    </div>
+      <div>
+        <h1>About</h1>
+        <p>This is the about page. Click the botton to preview projects</p>
+        </div>
+
     {isOpen ?
     //IS OPEN TRUE
     <div className="about">
@@ -71,7 +72,7 @@ function About(){
     
      :
     //IS OPEN FALSE
-    <button className="button button-nav" id="preview" onClick={toggle}>Preview</button>
+    <button className="button button-nav btn-center" id="preview" onClick={toggle}>Preview</button>
     }
     
         
