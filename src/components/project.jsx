@@ -12,7 +12,12 @@ function Project(props){
 
     return(
         <>
-        {isOpen && <Popup title={props.title} info={props.content} onClick={closePopup} image={props.image} />}
+        
+        {isOpen && <Popup title={props.title} info={props.content} 
+        onClick={closePopup} image={props.image} 
+        isCSS={props.isCSS} isHTML={props.isHTML} isScript={props.isScript}
+        isAnimate={props.isAnimate} link={props.link}
+        />}
         <div className="card">
             <h2>{props.title}</h2>
             <div className="preview">
