@@ -7,12 +7,3 @@
   
 }
 
-body{
-  position: relative;
-  background-color: #ffc6c6;
-  opacity: 1;
-  background-image: linear-gradient(to right, #ffbdbd, #ffbdbd 8.5px, #ffc6c6 8.5px, #ffc6c6 );
-  background-size: 17px 100%;
-  padding: 0;
-  
-}

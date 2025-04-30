@@ -18,22 +18,19 @@ function Project(props){
         isCSS={props.isCSS} isHTML={props.isHTML} isScript={props.isScript}
         isAnimate={props.isAnimate} link={props.link}
         />}
-        <div className="card">
-            <h2>{props.title}</h2>
-            <div className="preview">
-                <img className="screenshot" src={props.image} alt="screenshot of project"/>
-                <a href={props.link}><button className="button"><img src={git}/>GITHUB</button></a>
-            </div>
-            <div className="tech">
-                {props.isCSS? <span className="css">CSS</span> : ""}
-                {props.isHTML? <span className="html">HTML5</span> : ""}
-                {props.isScript? <span className="javascript">Javascript</span> : ""}
-                {props.isAnimate? <span className="animation">Animation</span> : ""}
-            </div>
-            <p>{props.content}</p>
-            <button className="button berry" onClick={()=>setisOpen(true)}>🔍</button>
-            
-       
+        <div className="flex flex-col align-middle w-sm mt-4 md:w-md rounded-lg shadow-lg">
+            <h2 className="font-bold text-center text-x1 mb-2 leading-normal">{props.title} <button className="button berry" onClick={()=>setisOpen(true)}>🔍</button></h2>
+            <img className="w-full"src={props.image} />
+           <div className="flex justify-center">
+                {props.isHTML? <button className=" m-2 bg-indigo-50 text-indigo-800 font-montserrat py-2 px-2 md:px-8 font-medium rounded-xl shadow-lg shadow-indigo-500/50">
+                        HTML</button> : ""}
+                {props.isCSS? <button className=" m-2 bg-fuchsia-200 text-fuchsia-800 font-montserrat py-2 px-2 md:px-8 font-medium rounded-xl shadow-lg shadow-indigo-500/50">
+                    CSS</button> : ""}    
+                {props.isScript? <button className=" m-2 bg-fuchsia-400 text-white font-montserrat py-2 px-2 md:px-8 font-medium rounded-xl shadow-lg shadow-indigo-500/50">
+                    Javascript</button> : ""}  
+                {props.isAnimate? <button className="m-2 bg-indigo-400 text-white font-montserrat py-2 px-2 md:px-8 font-medium rounded-xl shadow-lg shadow-indigo-500/50">
+                    Animation</button> : ""}  
+           </div>
         </div>
         </>
     )
